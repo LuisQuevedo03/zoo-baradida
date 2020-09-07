@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Consultar Recorridos</title>
+	<link rel="stylesheet" type="text/css" href="rr.css">
+</head>
+<body>
+	<header><img src="img\r.png"></header>
+<section id="principal">
+	<div id="contenido">
+		<form action="respuesta.html" class="formulario" method="get">
+			<div>
+				<label for="Fecha">Fecha del Recorrido: </label>
+				<input type="text" id="Fecha" class="elementoForm Fecha" name="Fecha" placeholder="Introduzca la Fecha del Recorrido" required pattern="[A-Za-z0-9]{5,40}"/>
+			</div>
+			
+			<div class="button">
+				<input type="submit" id="btnAccionBuscar" value="Buscar"/>
+			</div>
+		</form>
+	</div>
+</section>
+<footer id="piespag">
+	<p> Derechos Reservados 2020</p>
+</footer>
+</body>
+</html>

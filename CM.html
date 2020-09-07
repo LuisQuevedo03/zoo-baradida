@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Consultas Medicas</title>
+	<link rel="stylesheet" type="text/css" href="rr.css">
+</head>
+<body>
+	<header><img src="img\hm.png"></header>
+<section id="principal">
+	<div id="contenido">
+		<form action="respuesta.html" class="formulario" method="get">
+			<div>
+				<label for="nombreEncargado">Veterinario Encargado De La Consulta: </label>
+				<input type="text" id="nombreEncargado" class="elementoForm nombreEncargado" name="nombreEncargado" placeholder="Introduzca el Nombre Del Veterinario" required pattern="[A-Za-z0-9]{5,40}"/>
+			</div>
+			<div>
+				<label for="Enfermedad">Tipo de Enfermedad:</label>
+				<input type="text" id="Enfermedad" class="elementoForm text" name="Especie" placeholder="Introduzca La Especie Del Animal" title="Introduzca La Especie Del Animal" pattern="[A-Za-z]+\s[A-Za-z]{5,40}" required/>
+			</div>
+			<div>
+				<label for="Codigo">Codigo Del Animal</label>
+				<input type="text" id="Codigo" class="elementoForm Codigo" name="Codigo" placeholder="Introduzca El Codigo Del Animal" title="Introduzca El Codigo Del Animal" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9]+)*$" required/>
+			</div>
+			<div>
+				<label for="Vacunas">Vacunas Implementadas Contra La Enfermedad:</label>
+				<input type="text" id="Vacunas" class="elementoForm Vacunas" name="Vacunas" placeholder="Introduzca Las Vacunas Implementadas Contra La Enfermedad" title="Introduzca Las Vacunas Implementadas Contra La Enfermedad" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9]+)*$" required/>
+			</div>
+			<div>
+				<label for="nombreCantidad">Numero de Consulta del Animal: </label>
+				<input type="text" id="nombreCantidad" class="elementoForm nombreCantidad" name="nombreCantidad" placeholder="Introduzca El Numero de Consulta del Animal" required pattern="[A-Za-z0-9]{5,40}"/>
+			</div>
+			<div>
+				<label for="Tipo">Tipo de Consulta: </label>
+				<input type="text" id="Tipo" class="elementoForm Tipo" name="nombreTipo" placeholder="Introduzca El Tipo De Consulta del Animal" required pattern="[A-Za-z0-9]{5,40}"/>
+			</div>
+			<div>
+				<label for="Fecha">Fecha De La Consulta: </label>
+				<input type="text" id="Fecha" class="elementoForm Fecha" name="Fecha" placeholder="Introduzca La Fecha De La Consulta" required pattern="[A-Za-z0-9]{5,40}"/>
+			</div>
+			<div class="button">
+				<input type="submit" id="btnAccionRegistrar" value="Registrar Consulta"/>
+			</div>
+		</form>
+	</div>
+</section>
+<footer id="piespag">
+	<p> Derechos Reservados 2020</p>
+</footer>
+</body>
+</html>

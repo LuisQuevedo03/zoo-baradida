@@ -1,0 +1,62 @@
+
+body{
+	text-align: center;
+	width: 80%;
+	margin:10px auto;	
+}
+header{
+	border:solid thin blue;
+	border-radius: 15px;
+	margin-bottom: 10px;
+	min-height: 180px;
+	width: 100%;
+}
+nav ul li{
+	display: inline-block;
+	margin: 0 10px;
+	padding: 4px 10px;
+	border: 1px solid #fff;
+	border-radius: 4px;	
+}
+header,section,footer,aside,nav,article,figure,figcaption,hgroup{
+	display: block;
+}
+header,
+#principal,
+#contenido,
+#section,
+#menu,
+#piespag{
+	border-radius: 15px;
+}
+#menu{
+border:solid thin orange;
+padding: 5px 15px;
+text-align: center;
+background:#00ae66;
+}
+#menu li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font:bold 14px verdana, sans-serif;
+	color: blue;
+}
+#principal{
+	width: 100%;
+	padding: 5px;
+}
+#contenido ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font:bold 20px verdana, sans-serif;
+	color: blue;
+	border: 1px solid #fff;
+}
+#piespag{
+	border:solid thin red;
+	border-radius: 15px;
+	min-height: 80px;
+	width: 100%;
+}

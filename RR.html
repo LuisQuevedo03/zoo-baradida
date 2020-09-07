@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrar Recorridos</title>
+	<link rel="stylesheet" type="text/css" href="rr.css">
+</head>
+<body>
+	<header><img src="img\r.png"></header>
+<section id="principal">
+	<div id="contenido">
+		<form action="respuesta.html" class="formulario" method="get">
+			<div>
+				<label for="nombreEncargado">Nombre del Encargado: </label>
+				<input type="text" id="nombreEncargado" class="elementoForm nombreEncargado" name="nombreEncargado" placeholder="Introduzca el Nombre Del Encargado del Recorrido" required pattern="[A-Za-z0-9]{5,40}"/>
+			</div>
+			<div>
+				<label for="Hora">Hora del Recorrido:</label>
+				<input type="text" id="Hora" class="elementoForm text" name="Hora" placeholder="Introduzca La Hora del Recorrido" title="Introduzca La Hora del Recorrido" pattern="[A-Za-z]+\s[A-Za-z]{5,40}" required/>
+			</div>
+			<div>
+				<label for="Fecha">Fecha del Recorrido</label>
+				<input type="text" id="Fecha" class="elementoForm Fecha" name="Fecha" placeholder="Introduzca la Fecha Del Recorrido" title="Introduzca la Fecha Del Recorrido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9]+)*$" required/>
+			</div>
+			<div>
+				<label for="Fecha">Sucesos del Recorrido</label>
+				<input type="text" id="Sucesos" class="elementoForm Sucesos" name="Sucesos" placeholder="Introduzca Lo Relevante del Recorrido" title="Introduzca Lo Relevante del Recorrido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9]+)*$" required/>
+			</div>
+			<div class="button">
+				<input type="submit" id="btnAccionRegistrar" value="Registrar Recorrido"/>
+			</div>
+		</form>
+	</div>
+</section>
+<footer id="piespag">
+	<p> Derechos Reservados 2020</p>
+</footer>
+</body>
+</html>

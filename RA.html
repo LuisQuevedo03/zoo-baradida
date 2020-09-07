@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrar Animal</title>
+	<link rel="stylesheet" type="text/css" href="rr.css">
+</head>
+<body>
+	<header><img src="img\a.png"></header>
+<section id="principal">
+	<div id="contenido">
+		<form action="respuesta.html" class="formulario" method="get">
+			<div>
+				<label for="nombreAnimal">Nombre del Animal: </label>
+				<input type="text" id="nombreAnimal" class="elementoForm nombreAnimal" name="nombreAnimal" placeholder="Introduzca el Nombre Del Animal" required pattern="[A-Za-z0-9]{5,40}"/>
+			</div>
+			<div>
+				<label for="Especie">Especie Del Animal:</label>
+				<input type="text" id="Especie" class="elementoForm text" name="Especie" placeholder="Introduzca La Especie Del Animal" title="Introduzca La Especie Del Animal" pattern="[A-Za-z]+\s[A-Za-z]{5,40}" required/>
+			</div>
+			<div>
+				<label for="Codigo">Codigo Del Animal</label>
+				<input type="text" id="Codigo" class="elementoForm Codigo" name="Codigo" placeholder="Introduzca El Codigo Del Animal" title="Introduzca El Codigo Del Animal" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9]+)*$" required/>
+			</div>
+			<div>
+				<label for="Sexo">Sexo Del Animal</label>
+				<input type="text" id="Sexo" class="elementoForm Sexo" name="Sexo" placeholder="Introduzca El Sexo Del Animal" title="Introduzca El Sexo Del Animal" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9]+)*$" required/>
+			</div>
+			<div class="button">
+				<input type="submit" id="btnAccionRegistrar" value="Registrar Animal"/>
+			</div>
+		</form>
+	</div>
+</section>
+<footer id="piespag">
+	<p> Derechos Reservados 2020</p>
+</footer>
+</body>
+</html>
